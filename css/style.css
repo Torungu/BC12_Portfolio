@@ -1,0 +1,204 @@
+.cyber_title {
+  padding: 50px 0;
+}
+.cyber_title h1 {
+  text-transform: capitalize;
+  font-size: 2rem;
+  text-align: center;
+}
+.cyber_title p {
+  color: gray;
+  text-align: center;
+  margin-top: 20px;
+}
+/* header */
+header .collapse .navbar-nav .nav-link::after {
+  position: absolute;
+  content: " ";
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 0.1rem;
+  background-color: green;
+}
+header .collapse .navbar-nav .nav-link:hover::after {
+  transition: all 0.5s;
+  width: 100%;
+}
+header .collapse .navbar-nav .nav-link:hover {
+  color: green !important;
+}
+header .collapse .navbar-nav .nav-link.active {
+  color: green !important;
+}
+header .collapse .navbar-nav .nav-link.active::after {
+  width: 100%;
+}
+header {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+}
+
+/* carousel */
+.carousel_content {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.carousel_content img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+.carousel_content h5 {
+  font-size: 3rem;
+  color: white;
+}
+.carousel_content p {
+  color: white;
+  font-size: 1.5rem;
+}
+.carousel-inner .carousel-item::before {
+  position: absolute;
+  content: " ";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgb(39 43 54 / 50%);
+}
+.cyber_carousel .carousel .carousel-indicators button {
+  border-radius: 50%;
+  height: 12px;
+  width: 12px;
+}
+.carousel-indicators button.active {
+  background-color: green !important;
+}
+
+/* project */
+.cyber_content {
+  padding-bottom: 100px;
+}
+.cyber_project .tab-content .card-body {
+  padding-bottom: 50px;
+}
+.cyber_project .tab-content .card {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.cyber_project .cyber_content li button.active {
+  background-color: green !important;
+  border-color: green !important;
+  color: white !important;
+}
+.cyber_content .tab-content .card:hover .card-body h5 {
+  color: green;
+}
+.cyber_content .tab-content .card:hover .card-body {
+  border: solid 0.3px green !important;
+  border-top-color: transparent !important;
+  transition: all 0.5s;
+}
+
+/* available */
+.cyber_available {
+  background: url(../img/3.jpg) no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  height: 100vh;
+}
+@media screen and (max-width: 1200px) {
+  .cyber_available {
+    height: max-content;
+  }
+}
+.cyber_available .cyber_available_overlay {
+  position: absolute;
+  background-color: rgb(7 10 12 / 72%);
+  height: 100%;
+  width: 100%;
+}
+.cyber_available_content .card {
+  background-color: rgb(255 255 255 / 10%);
+}
+.cyber_available_content .card {
+  padding: 50px;
+}
+.cyber_available_content .card:hover {
+  background-color: black;
+  transition: all 0.5s;
+  border-color: white;
+}
+
+/* award */
+.cyber_award .cyber_title h1,
+.cyber_award .cyber_title p {
+  text-align: left;
+}
+.cyber_award {
+  padding: 100px 0;
+  background: url(../img/memphis_3.png) no-repeat;
+  background-size: contain;
+  background-position: left;
+}
+.cyber_award .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+.cyber_award .cyber_title {
+  background-color: rgb(255 255 255 / 25%);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.3);
+  padding: 40px;
+  border-radius: 10px;
+  backdrop-filter: blur(3px);
+}
+.cyber_award_content .award_img {
+  display: flex;
+  align-items: center;
+}
+.cyber_award_content .award_img img {
+  width: 20%;
+}
+
+/* footer */
+footer {
+  padding: 50px 0 20px;
+  background-color: #222;
+}
+footer ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  border-bottom: solid 1px #6c757d;
+  padding-bottom: 30px;
+}
+footer a {
+  text-decoration: none;
+  color: #6c757d;
+}
+footer li {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 50%;
+  border: solid 1px #6c757d;
+}
+footer li:hover {
+  color: green !important;
+  border: solid 1px green;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+footer li:hover i,
+footer a:hover {
+  color: green !important;
+  transition: all 0.5s;
+}

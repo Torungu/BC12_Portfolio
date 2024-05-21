@@ -1,0 +1,2 @@
+Before and After, có sự khác biệt ở vị trí ưu tiên.
+Tương tự cho thứ tự div khi muốn tạo lớp phủ overlay
