@@ -12,6 +12,9 @@
   margin-top: 20px;
 }
 /* header */
+header nav .container button {
+  background-color: green;
+}
 header .collapse .navbar-nav .nav-link::after {
   position: absolute;
   content: " ";
@@ -39,7 +42,6 @@ header {
   z-index: 1;
   width: 100%;
 }
-
 /* carousel */
 .carousel_content {
   position: absolute;
@@ -111,11 +113,7 @@ header {
   position: relative;
   height: 100vh;
 }
-@media screen and (max-width: 1200px) {
-  .cyber_available {
-    height: max-content;
-  }
-}
+
 .cyber_available .cyber_available_overlay {
   position: absolute;
   background-color: rgb(7 10 12 / 72%);
@@ -201,4 +199,25 @@ footer li:hover i,
 footer a:hover {
   color: green !important;
   transition: all 0.5s;
+}
+@media screen and (max-width: 1200px) {
+  .cyber_available {
+    height: max-content;
+  }
+}
+@media screen and (max-width: 992px) {
+  header nav .container .collapse {
+    transition: all 0.5s;
+    background-color: rgba(255, 255, 255, 0.774);
+  }
+  header .collapse .navbar-nav .nav-link {
+    color: green !important;
+  }
+  header .collapse .navbar-nav .nav-link.active::after {
+    width: 0%;
+  }
+  header .collapse .navbar-nav .nav-link:hover::after {
+    width: 100%;
+    transition: all 0.5s;
+  }
 }
